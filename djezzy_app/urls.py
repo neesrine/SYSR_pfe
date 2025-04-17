@@ -15,5 +15,7 @@ router.register(r'experiences', ExperienceViewSet)
 router.register(r'offres', OffreViewSet)  # Ajout de la route pour les offres
 router.register(r'candidatures', CandidatureViewSet)
 urlpatterns = [
+    
     path('', include(router.urls)),  #  Corrigé : plus de 'api/' ici
+
 ]

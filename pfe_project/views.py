@@ -1,6 +1,6 @@
 # pfe_project/views.py
 
-from django.http import HttpResponse
+from django.shortcuts import render
 
 def home(request):
-    return HttpResponse("Bienvenue sur la page d'accueil !")
+    return render(request,'djezzy_app/home.html')

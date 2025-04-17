@@ -26,7 +26,7 @@ class CompetenceSerializer(serializers.ModelSerializer):
         model = Competence
         fields = '__all__'
 
-# ✅ Correct : classe séparée
+
 class WilayaSerializer(serializers.ModelSerializer):
     class Meta:
         model = Wilaya

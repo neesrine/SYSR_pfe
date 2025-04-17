@@ -19,9 +19,9 @@ from .serializers import (
     CandidatureSerializer,
 )
 from django.http import HttpResponse
-
+from django.shortcuts import render 
 def home(request):
-    return HttpResponse("Le serveur fonctionne correctement. Bienvenue sur l'API.")
+    return render(request,'djezzy_app/home.html')
 
 class CandidatViewSet(viewsets.ModelViewSet):
     queryset = Candidat.objects.all()
